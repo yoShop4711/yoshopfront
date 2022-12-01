@@ -25,7 +25,7 @@ function Header() {
   
 
   const logoutUser = async () => {
-    await axios.get("/auth/logout", {
+    await axios.get("https://newyoshopapi.onrender.com/auth/logout", {
       headers: {
         Authorization: `Bearer ${tok}`,
       },

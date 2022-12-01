@@ -22,7 +22,7 @@ useEffect(() => {
     if(firstLogin) {
 
         const refreshToken = async () => {
-            const res = await axios.get('/auth/refresh_token', )
+            const res = await axios.get('https://newyoshopapi.onrender.com/auth/refresh_token', )
 
             setToken(res.data.accesstoken)
             localStorage.setItem('token', res.data.accesstoken)
