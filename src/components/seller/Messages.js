@@ -103,7 +103,7 @@ function Messages({id}) {
 
       const getMessages = async () => {
 
-        const res = await axios.get(`https://newyoshopapi.onrender.com/message/coversation/query?userId=${id}`, {
+        const res = await axios.get(`/message/coversation/query?userId=${id}`, {
           headers: {
             Authorization: `Bearer ${token}`
 
